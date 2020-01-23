@@ -19,7 +19,7 @@ if [ ! ${#macup_node_packages[@]} -eq 0 ]; then # If config has npm entries
   fi
   # Install Node packages
   for ((i=0; i<${#macup_node_packages[@]}; ++i)); do
-    install_or_upgrade_npm_package "${macup_node_packages[i]}"
+    install_or_upgrade_node_package "${macup_node_packages[i]}"
   done
   report_from_package " Global Node packages:"
   npm list -g --depth 0

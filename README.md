@@ -10,7 +10,7 @@ npm install eeerlend/macup-node
 ```
 
 ## Configuration
-Add your dotfiles to your macup configuration file like this...
+Add Node packages via NPM. Node is installed via Homebrew if it's not already installed. Homebrew is installed if it's not already installed.
 
 ```bash
 macup_node_packages+=(

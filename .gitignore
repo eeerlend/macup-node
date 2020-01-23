@@ -1,0 +1,15 @@
+/node_modules
+/vendor
+npm-debug.log
+yarn-error.log
+
+# OS X Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.lnk
+*~
+
+# IDE FILES
+*.code-workspace

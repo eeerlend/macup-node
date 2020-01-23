@@ -6,20 +6,16 @@ A [macup](https://github.com/eeerlend/macup-builder) module that keeps your dotf
 Run the following command to add it to your repo
 
 ```bash
-npm install eeerlend/macup-node --save
+npm install eeerlend/macup-node
 ```
 
 ## Configuration
 Add your dotfiles to your macup configuration file like this...
 
 ```bash
-macup_dotfiles_cloud_files+=(
-  myfile
-  myotherfile:644
-  .ssh/config:644
-  .ssh/my_private_key:600
+macup_node_packages+=(
+  tree-cli
+  browser-sync
+  @vue/cli
 )
-macup_dotfiles_cloud_type=icloud|dropbox
 ```
-
-... following the `filename:chmod` pattern. All filenames should be relative to your HOME directory, `$HOME/`
